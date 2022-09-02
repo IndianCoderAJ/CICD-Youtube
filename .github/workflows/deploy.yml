@@ -1,9 +1,9 @@
-name: CICD for Youtube
+name: Feisty CI/CD for Dev
 
 on:
   push:
     branches:
-        - main
+        - dev
 
 jobs:
   build:
@@ -45,7 +45,7 @@ jobs:
 
                nvm instal 14
                npm install -g pm2
-               cd ~/CICD
+               cd ~/feisty-demo
                git pull origin main
                npm install
                npm run build
