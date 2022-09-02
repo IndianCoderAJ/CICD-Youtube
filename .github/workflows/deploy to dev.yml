@@ -45,7 +45,7 @@ jobs:
 
                nvm instal 14
                npm install -g pm2
-               cd ~/feisty-demo
+               cd ~/feisty-demo-dev
                git pull origin main
                npm install
                npm run build
